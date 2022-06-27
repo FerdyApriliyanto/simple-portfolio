@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title> My Simple Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="center">
+                <a href="#">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- home -->
+        <div class="home-bg">
+            <section class="home" id="home">
+                <article class="content">
+                    <p>Welcome To My Portfolio Website</p>
+                    <a href="#profile" class="button">About Me</a>
+                </article>
+            </section>
+        </div>
+        <!-- end of home -->
+
+        <!-- profile -->
+        <section class="profile profile-font" id="profile">
+            <article class="content">
+                <h1>My Story</h1>
+                <p>Hello, my name is Ferdy Apriliyanto, I am currently 19 years old and currently studying at IBI
+                    Kesatuan. The first time i learned programming was when I entered high school. The first
+                    programming language I
+                    learned was C++ then in my second year I studied one of the PHP frameworks that being used at
+                    that time, namely laravel. In the second year of semester 1 I did an internship for 6 months at
+                    PT United Tractors as a back-end engineer.But now I found myself more insterested on front-end
+                    development.
+                </p>
+                <div class="button-container">
+                    <a onclick="changeColor()" class="color-button">Randomize font color</a>
+                    <a onclick="defaultColor()" class="color-button">Default font color</a>
+                </div>
+            </article>
+            <aside class="card">
+                <header>
+                    <h2>Ferdy Apriliyanto</h2>
+                    <figure>
+                        <img src="images/profile.png">
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nationality</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <th>Hobby</th>
+                            <td>Coding and Gaming</td>
+                        </tr>
+                        <tr>
+                            <th>Interest</th>
+                            <td>HTML,CSS,JS,ReactJS</td>
+                        </tr>
+                    </table>
+                </section>
+            </aside>
+        </section>
+        <!-- end of profile -->
+
+        <!-- skills -->
+        <section class="skills">
+            <div class="flex-container">
+                <div class="flex-box">
+                    <img src="images/web-design.png" alt="">
+                    <h3>Web Design</h3>
+                    <p>Build various types of websites, ranging from portfolios websites, esport team profiles websites,
+                        e-commerce websites,
+                        company or startup profiles websites to personal blogs.</p>
+                </div>
+                <div class="flex-box">
+                    <img src="images/web-development.png" alt="">
+                    <h3>Web Development</h3>
+                    <p>
+                        Start creating your own website. Starting from static pages, electronic businesses, to social
+                        network services. Websites that you can control yourself through the admin panel.</p>
+                </div>
+                <div class="flex-box">
+                    <img src="images/app-design.png" alt="">
+                    <h3>App Design</h3>
+                    <p>Start creating any design or mockup of the application you want to build. Starting from mobile
+                        applications, desktops to websites. Good design starts with a perfect idea!.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of skills -->
+
+        <script src="js/script.js"></script>
+    </main>
+
+    <footer>
+        <div id="contact" class="flex-container">
+            <p>Contact Me</p>
+            <div class="flex-row">
+                <div class="flex-box">
+                    <a href="https://www.instagram.com/ferdyapriliyanto/"><img src="images/instagram.png" alt=""></a>
+                </div>
+                <div class="flex-box">
+                    <a href="https://www.facebook.com/ferdy.apriliyanto.5/"><img src="images/facebook.png" alt=""></a>
+                </div>
+                <div class="flex-box">
+                    <a href="https://www.twitch.tv/magus_ch"><img src="images/twitch.png" alt=""></a>
+                </div>
+            </div>
+            <p class="credit">&copy; 2022, Ferdy Apriliyanto</p>
+        </div>
+    </footer>
+</body>
+
+</html>

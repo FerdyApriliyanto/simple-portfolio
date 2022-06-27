@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Patrick+Hand&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* nav */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #525252;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    min-height: 5rem;
+}
+
+nav a::selection {
+    background-color: #313131;
+}
+
+nav a {
+    color: white;
+    padding: 2rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .center {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+}
+
+/* end of nav */
+
+/* button */
+.button {
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+    color: #313131;
+    padding: 1.2rem;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.button:hover {
+    background-color: #525252;
+    color: white;
+    border-radius: 5rem;
+}
+
+.color-button {
+    background-color: #525252;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    padding: 1.2rem;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    max-width: 8.7rem;
+}
+
+.color-button:hover {
+    border-radius: 5rem;
+}
+
+.button-container {
+    display: flex;
+    padding-top: 2rem;
+    gap: 1rem;
+}
+
+/* end of button */
+
+/* home */
+.home p::selection {
+    background-color: #525252;
+}
+
+.home-bg {
+    background-image: url("../images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home {
+    min-height: 55.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.home-bg p {
+    font-size: 10rem;
+    padding: 2rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* end of home */
+
+/* profile */
+.profile h1::selection,
+.profile h2::selection,
+.profile th::selection,
+.profile td::selection,
+.profile p::selection {
+    background-color: #525252;
+    color: white;
+}
+
+.profile {
+    min-height: 10rem;
+    display: flex;
+    color: #525252;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.profile .content {
+    width: 50rem;
+    text-align: justify;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.profile .content h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.profile .content {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+}
+
+aside {
+    font-family: 'Patrick Hand', cursive;
+    overflow: auto;
+    z-index: +1;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside h2 {
+    padding-bottom: 1rem;
+}
+
+aside table {
+    font-size: 1.2rem;
+}
+
+aside table th {
+    padding: 0.2rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 2rem;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-radius: 5rem;
+    box-shadow: 0 4px 8px 0 #525252;
+}
+
+/* end of profile */
+
+/* skills   */
+.skills .flex-container {
+    display: flex;
+    background-color: #414141;
+    min-height: 25rem;
+}
+
+.skills .flex-container .flex-box {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    padding: 2rem;
+    flex-basis: 33.3%;
+}
+
+.skills .flex-container .flex-box p::selection,
+.skills .flex-container .flex-box h3::selection {
+    background-color: white;
+    color: #525252;
+}
+
+.skills .flex-container .flex-box h3 {
+    font-size: 1.8rem;
+}
+
+.skills .flex-container .flex-box p {
+    padding-top: 2rem;
+    max-width: 28rem;
+    margin: auto;
+}
+
+.skills .flex-container .flex-box img {
+    height: 8rem;
+}
+
+/* end of skills */
+
+/* footer */
+footer {
+    background-color: #313131;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer img::selection,
+footer p::selection {
+    background-color: #525252;
+}
+
+footer .flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .flex-row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+footer .flex-row img {
+    height: 6rem;
+    padding: 1rem;
+}
+
+footer p {
+    padding-top: 2.5rem;
+    margin: auto;
+}
+
+footer .credit {
+    padding: 2rem;
+}
+
+/* end of footer */
+
+@media(max-width: 991px) {
+    html {
+        font-size: 80%;
+    }
+
+    .profile .content {
+        max-width: 29rem;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        padding: 5rem;
+        margin: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .home p {
+        font-size: 4rem;
+    }
+
+    .profile .content {
+        max-width: 29rem;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .center {
+        display: flex;
+        flex-direction: row;
+    }
+}
